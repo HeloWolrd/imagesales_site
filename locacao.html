@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   
+<!--couter links-->
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+  
+<style>
+
+  body,h1,h2,h3,h4,h5,h6,a {font-family: 'Montserrat', sans-serif;
+}
+
+    p{
+      text-align: left;
+      font-size:25px;
+    }
+    h3{
+      font-size: 40px;
+    }
+    #textos_imagem{
+      padding-top: 360px;
+      padding-left: 30px;
+    }
+    #titulo{
+      color: #fff;
+      font-weight: bold;
+    }
+    #subtitulo{
+      color: #fff;
+      font-size: 23px;
+      background-color: black;
+    }
+
+    /*Footer*/
+  .footer {
+  background-color: rgb(0, 0, 0);
+   color: white;
+   text-align: center;
+   height:190px;
+   margin-top: -100px;
+   overflow: hidden;
+}
+
+    /* Full height image header */
+    #home {
+      margin-top: 60px;
+      background-position: center;
+      background-size: cover;
+      background-image: url("./images/Copia_de_Apresentacao_Locacao_1_.png");
+      min-height: 100%;
+    }
+
+    /* Button */    
+  .button {
+  background-color: #ffb52b; 
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+    .w3-jumbo w3-hide-small{
+      font-size:10px;
+    }
+i{
+  color: #ffb52b;
+}
+
+    /*-------------------------Whatsapp button---------------------------*/
+    a{
+  text-decoration:none;
+}
+.floating_btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+  z-index: 1000;
+}
+
+@keyframes pulsing {
+  to {
+    box-shadow: 0 0 0 30px rgba(232, 76, 61, 0);
+  }
+}
+
+.contact_icon {
+  background-color: #13ff7d;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  font-size:30px;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translatey(0px);
+  animation: pulse 1.5s infinite;
+  box-shadow: 0 0 0 0 #42db87;
+  -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+  font-weight: normal;
+  font-family: sans-serif;
+  text-decoration: none !important;
+  transition: all 300ms ease-in-out;
+}
+
+
+.text_icon {
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+.img_header{
+
+}
+.header h1 {
+  font-size: 50px;
+}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.img {
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+
+  </head>
+
+
+<body>
+
+<!-- Navbar (sit on top) -->
+
+<div class="w3-top">
+  
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    
+     <a href="https://imagesales.w3spaces.com/index.html" class="w3-bar-item w3-button w3-wide"><img src="images/logo_image.png" alt="" width="154px" height="50px"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PACOTES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>CONTATO</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-key"></i> LOCAÇÃO</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Fechar ×</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PACOTES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>CONTATO</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-key"></i> LOCAÇÃO</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container " id="home">
+  <div id="textos_imagem" ">
+    <h1 id="titulo">Locação de estúdio fotografico em Alphaville</h1>
+    <span id="subtitulo">Leve seus projetos para o próximo nível</span>
+    <p><a href="#about" class="button">RESERVE JÁ</a></p>
+    <br>
+  </div> 
+</header>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>O espaço</h2>
+      <img class="img" src="./images/Apresentacao_Locacao.png" alt="planta do estúdio"width="100%" >
+      <p>Ambientes assinados pela designer de
+ Interiores Inaie Cardoso  (@inaiecardoso)</p>
+      <p>A Image Sales oferece um combo de solução completa aos clientes, indo além do simples retrato. 
+</p>
+<p>Podemos incluir serviços como pré-produção de cabelo e maquiagem, além de consultoria de imagem pessoal e profissional. 
+</p>
+<p>Entendemos que a imagem vai além da fotografia em si e, por isso, auxiliamos nossos clientes em todos os aspectos para que eles transmitam a mensagem desejada.
+</p>
+    </div>
+    <div class="card">
+      <h2>Equipamentos de iluminação inclusos:</h2>
+      <img class="img" src="https://previews.dropbox.com/p/thumb/AB-VOtTilD8qb0UOr8N_Essbwo5yVKfNofd-riKpKGehpNHLfsx-ApXlrYILv8sPnD5mTt5nt8HUtYdq7PWYwBho4IR8EK-1Jc9CgYXyxlOEag2UpvxmpyNFHg8r-7pefRxwbWg315fJw-zgGi1r3Gv7SfTmwFza4Pe2jLRHmnqlYaSoG0rx9WIw_vOLYve0CQ8lbrsPlnpsdYkkvnM3FFcMFr0KQs8uEddiO03Swoj9bb0spcnJGVbxeTQC0pQ8o9btbv_jiKVmTvZag37y8LekiGrt_rN_JduXCPMk8Dk70hlfNBngkeXD07SV4CvhgOL3bP4Ujeudc0fR-ZsfpctP/p.jpeg" alt="planta do estúdio" width="100%" >
+      <h3>FOTO</h3>
+      <br>
+  <p>
+✓ 02 tochas Atek 200w <br>
+✓ 02 Tripés de iluminação <br>
+✓ 01 Sombrinha branca <br>
+✓ 01 Haze Atek <br>
+✓ Difusor dobrável (branco, prata e dourado) 
+ </p>
+ <h3>VÍDEO</h3>
+ <br>
+  <p>
+✓ 02 Iluminadores LED ( Cabeça Articulável )<br>
+✓ 02 Tripés de Iluminação <br>
+✓ 02 Softbox 50x70cm<br>
+✓ 02 Difusores 50x70cm
+ </p>
+</div>
+<div>
+    </div>
+    <div class="card">
+      <h2>Conheça o estúdio</h2>
+      <div class="img">    
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hR9jv_hYtXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+     
+    </div>
+        <div class="card">
+      <h3>Valores</h3>
+    
+      <p> <b>
+        3 horas - R$280 <br>
+        4 horas - R$345 <br>
+        6 horas - R$480 <br>
+        Diária 8 a 12 horas - R$780 <br>
+        Cabelo e maquiagem - R$300 <br>
+        Consultoria de imagem corporativa - R$250 <br>
+        Dossiê para fotógrafo - R$200 <br>
+        Assistente de Produção- R$150hr
+        </b>
+      </p>
+      
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Sobre nós</h2>
+      <img class="img" src="./images/deise.jpg" alt="tabela de valores"width="100%" >
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Veja mais</h3>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PACOTES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>CONTATO</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-key"></i> LOCAÇÃO</a>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:80px 16px" id="contact">
+  <h3 class="w3-center">CONTATO</h3>
+  <p class="w3-center w3-large">Onde nos encontrar</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Image Sales
+Av. dos Parques, 45 - Sala 403 B - Entrada para Alphasitio - Próximo a UNIP ALPHAVILLE</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefone:+55 (11) 97651-8864</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: imagesalesbr@gmail.com </p>
+    <br>
+  </div>
+    <!-- Image of location/map -->
+   <div class="mapouter">
+    <div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q= Av. dos Parques, 45 - Alphasitio, Santana de Parnaíba - SP, 06544-300&t=k&z=16&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://2yu.co"></a><br><style>.mapouter{position:relative;text-align:right;height:100%;width:100%;}</style><a href="https://embedgooglemap.2yu.co/">html embed google map</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:100%;width:100%;}</style>
+    </div>
+    </div>
+</div>
+
+<br>
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="footer">
+  <br>
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Para o topo</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+  </div>
+  <h5>Image Sales© 2023</h5>
+</footer>
+ 
+ <!-- Whatsapp button-->
+
+<div class="floating_btn">
+    <a target="_blank" href="https://wa.me/">
+      <div class="contact_icon">
+        <i class="fa fa-whatsapp my-float" style="color: white"></i>
+      </div>
+    </a>
+    <p class="text_icon">AGENDE AQUI</p>
+  </div>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+// responsive counter
+
+function inVisible(element) {
+  //Checking if the element is
+  //visible in the viewport
+  var WindowTop = $(window).scrollTop();
+  var WindowBottom = WindowTop + $(window).height();
+  var ElementTop = element.offset().top;
+  var ElementBottom = ElementTop + element.height();
+  //animating the element if it is
+  //visible in the viewport
+  if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
+    animate(element);
+}
+
+function animate(element) {
+  //Animating the element if not animated before
+  if (!element.hasClass('ms-animated')) {
+    var maxval = element.data('max');
+    var html = element.html();
+    element.addClass("ms-animated");
+    $({
+      countNum: element.html()
+    }).animate({
+      countNum: maxval
+    }, {
+      //duration 5 seconds
+      duration: 5000,
+      easing: 'linear',
+      step: function() {
+        element.html(Math.floor(this.countNum) + html);
+      },
+      complete: function() {
+        element.html(this.countNum + html);
+      }
+    });
+  }
+
+}
+
+//When the document is ready
+$(function() {
+  //This is triggered when the
+  //user scrolls the page
+  $(window).scroll(function() {
+    //Checking if each items to animate are 
+    //visible in the viewport
+    $("h2[data-max]").each(function() {
+      inVisible($(this));
+    });
+  })
+});
+
+</script>
+
+</body>
+</html>
